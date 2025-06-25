@@ -10,7 +10,7 @@ import numpy as np
 MAX_LEN = 1500
 LABEL_MAP = {0: 'apple', 1: 'banana', 2: 'basketball', 3: 'book', 4: 'car', 5: 'door', 6: 'eye', 7: 'smiley face', 8: 'sun', 9: 'tree', 10: 'zigzag'}
 
-device = torch.device('cuda')
+device = torch.device('cpu')
 model = sketch_transformer(num_classes=11).to(device)
 state_dict = torch.load('best_model.pth', map_location=device)
 model.load_state_dict(state_dict)
