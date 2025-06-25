@@ -3,3 +3,4 @@ Pillow==11.2.1
 streamlit==1.46.0
 streamlit_drawable_canvas==0.9.3
 torch==2.7.1
+opencv-python-headless
